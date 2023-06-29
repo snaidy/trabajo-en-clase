@@ -1,0 +1,71 @@
+@import "./variables.scss";
+
+.login {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: white;
+    &__return {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        display: flex;
+        gap: 0.5rem;
+        cursor: pointer;
+        img {
+            width: 2rem;
+            filter: invert(19%) sepia(82%) saturate(2642%) hue-rotate(175deg) brightness(106%) contrast(101%);
+        }
+
+        p{
+            font-size: 1.4rem;
+            color: $color-cerulan;
+        }
+    }
+
+    &__form {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        border: 1px solid $color-cerulan;
+        border-radius: 10px;
+        background-color: $color-cerulan;
+
+        h2 {
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        input {
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            margin-bottom: 0.7rem;
+        }
+
+        button {
+            padding:  0.5rem 1.5rem;
+            background-color: white;
+            color: $color-cerulan;
+            align-self: center;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin: 1rem;
+
+            &:hover {
+                background-color: #76bfd3d2;
+                color: white;
+            }
+        }
+    }
+}
+.ver {
+    display: none
+}
